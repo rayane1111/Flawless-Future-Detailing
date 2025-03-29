@@ -1,3 +1,5 @@
+/* style.css */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -25,10 +27,6 @@ nav ul {
     padding: 0;
 }
 
-nav ul li {
-    list-style: none;
-}
-
 nav ul li a {
     color: white;
     text-decoration: none;
@@ -39,6 +37,7 @@ nav ul li a {
     position: relative;
     text-align: center;
     color: white;
+    margin-bottom: 40px;
 }
 
 .hero img {
@@ -71,31 +70,44 @@ nav ul li a {
     border-radius: 5px;
 }
 
-.services {
-    text-align: center;
-    padding: 50px 20px;
-    background: white;
-}
-
-.service-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.service {
-    background: #fff;
+section {
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px; /* Limit max width for better alignment */
 }
 
-.service img {
+.about,
+.contact {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about img,
+.contact img {
     width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
     border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
 }
 
 footer {
@@ -103,6 +115,5 @@ footer {
     padding: 20px;
     background: #222;
     color: white;
-    margin-top: 20px;
+    margin-top: 40px;
 }
-
