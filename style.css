@@ -1,18 +1,25 @@
+/* style.css */
 
-
+/* CSS Reset */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+body, html {
+    height: 100%;
+}
+
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     line-height: 1.6;
+    padding: 0;
+    margin: 0;
 }
 
-/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -20,6 +27,7 @@ header {
     padding: 20px;
     background-color: #222;
     color: white;
+    width: 100%;
 }
 
 .logo img {
@@ -49,9 +57,8 @@ nav ul li a {
 
 .hero img {
     width: 100%;
-    height: auto;
+    height: 400px;
     object-fit: cover;
-    max-height: 400px;
 }
 
 .hero-text {
@@ -79,23 +86,22 @@ nav ul li a {
     border-radius: 5px;
 }
 
-/* About and Contact Sections */
+/* Section Styling */
 section {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.about,
-.contact {
+.about, .contact {
     text-align: center;
     margin-bottom: 40px;
 }
 
-/* About Section Image */
+/* About Section */
 .about img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    max-width: 600px;
     margin-top: 20px;
     border-radius: 10px;
 }
@@ -109,14 +115,15 @@ form {
     margin-top: 20px;
     max-width: 600px;
     width: 100%;
+    margin: 0 auto;
 }
 
-input,
-textarea {
+input, textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px;
 }
 
 textarea {
@@ -146,22 +153,26 @@ footer {
     margin-top: 40px;
 }
 
-/* Mobile Adjustments */
+/* Responsive Design */
 @media screen and (max-width: 768px) {
-    .hero-text h1 {
-        font-size: 28px;
-    }
-
     .hero img {
         height: 250px;
     }
 
-    form {
-        width: 100%;
-        padding: 0 20px;
+    .hero-text h1 {
+        font-size: 28px;
     }
 
+    form {
+        width: 90%;
+        padding: 0 20px;
+    }
+    
     input, textarea {
         width: 100%;
+    }
+
+    .about img {
+        max-width: 100%;
     }
 }
